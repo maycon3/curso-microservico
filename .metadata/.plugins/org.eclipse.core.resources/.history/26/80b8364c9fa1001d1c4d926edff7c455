@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: msclientes
+    
+
+server:
+  port: 0
+  
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://cursoms-eureka-user:curso-eureka-tem-que-ser-uma-senha-forte@localhost:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}    

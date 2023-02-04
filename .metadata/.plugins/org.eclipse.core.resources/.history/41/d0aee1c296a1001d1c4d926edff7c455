@@ -1,0 +1,5 @@
+package br.com.qualyt.config;
+
+public class SecurityConfig {
+
+}
